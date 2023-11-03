@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+<div class="equipos-list">
+    {% for equipo in equipos_list %}
+    <div class="equipos">
+        <div class="description">
+            <h1>{{ equipo.nombre }}</h1>
+            <p><span class="material-symbols-outlined">location_on</span> {{ equipo.ciudad }}</p>
+            <h2>Liga: {{ equipo.id_liga }}</h2>
+        </div>
+        <div class="e_logo">
+            <img src="/static/img/equipos_logo/{{ equipo.logo }}.png" alt="Imagen {{ equipo.nombre }}">
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

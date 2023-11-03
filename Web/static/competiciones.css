@@ -1,0 +1,40 @@
+.events-list {
+    background-color: #fff;
+    border: 1px solid rgb(255,255,255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the league logo */
+.events-list img {
+    width: auto;
+    height: 100px;
+}
+
+/* Style the card that contains league details */
+.card {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* Style the league name */
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Style the league links */
+p a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Style links on hover */
+p a:hover {
+    text-decoration: underline;
+}

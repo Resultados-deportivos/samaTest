@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/*----------------------------------------------------------------HEADER----------------------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color:white;
+}
+
+li {
+    list-style:none;
+    margin-right: 20px;
+    color:white;
+}
+a{
+    text-decoration:white;
+    color:white;
+}
+
+.search, .icon, .register {
+    display: flex;
+    align-items: center;
+}
+
+
+.search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    color:white;
+}
+.icon img {
+    max-width: 50px;
+}
+
+.register button {
+    background-color: RGB(255, 102, 0);
+    height:80%;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+/*----------------------------------------------------------------MAIN----------------------------------------------------------------*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    min-width:88%;
+}
+.content{
+    margin-top: 20px;
+    width: 88%;
+}
+
+/*----------------------------------------------------------------FOOTER----------------------------------------------------------------*/
+footer {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  color: rgb(241, 237, 255);
+  font-size: 18px;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  text-decoration: none;
+  color:rgb(241, 237, 255);
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  font-size: 24px;
+  color: purple;
+}
+

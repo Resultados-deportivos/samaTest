@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+  <div class="main-publication">
+    <div class="img">
+      <img src="/static/img/publicaciones/{{ publicaciones[0]['img'] }}" alt="Imagen publicación">
+    </div>
+    <div class="description">
+      <h1>{{ publicaciones[0]['titulo'] }}</h1>
+      <p>{{ publicaciones[0]['descripcion'] }}</p>
+      <button class="like" id="like-button-0">
+        <span class="material-symbols-outlined">thumb_up</span>
+      </button>
+      <button class="unlike" id="unlike-button-0">
+        <span class="material-symbols-outlined">thumb_down</span>
+      </button>
+      <div class="comments">
+        <input type="text" placeholder="Escribe un comentario">
+        <button class="comment">
+          <span class="material-symbols-outlined">send</span>
+        </button>
+        <div class="comment-list">
+              {% for comment in comments_list %}
+                {% if comment['publicacionid'] == publicaciones[0]['id'] %}
+                  <div class="comment">
+                    <p>{{ comment['descripcion'] }}</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="publication-list">
+    {% for publicacion in publicaciones[1:] %}
+      <div class="card">
+        <div class="img">
+          <img src="/static/img/publicaciones/{{ publicacion['img'] }}" alt="Imagen-publicacion">
+        </div>
+        <div class="description">
+          <h2>{{ publicacion['titulo'] }}</h2>
+          <p>{{ publicacion['descripcion'] }}</p>
+          <button class="like" id="like-button-{{ publicacion['id'] }}">
+            <span class="material-symbols-outlined">thumb_up</span>
+          </button>
+          <button class="unlike" id="unlike-button-{{ publicacion['id'] }}">
+            <span class="material-symbols-outlined">thumb_down</span>
+          </button>
+          <div class="comments">
+            <input type="text" placeholder="Escribe un comentario">
+            <button class="comment" id="comment-button-{{ publicacion['id'] }}">
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

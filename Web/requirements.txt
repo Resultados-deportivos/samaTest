@@ -1,0 +1,23 @@
+# pip freeze > requirements.txt (DELETE)
+jinja2
+wsgiref
+requests
+SQLAlchemy
+base
+blinker
+certifi
+charset-normalizer
+click
+colorama
+Faker
+Flask
+greenlet
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+psycopg2
+requests
+six
+urllib3
+Werkzeug

@@ -1,0 +1,98 @@
+    /*------------------------------------------------------------------------INICIO-----------------------------------------------------------------------------------*/
+.main-publication {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-publication .img {
+    flex: 1;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+
+.main-publication .description {
+    flex: 2;
+}
+
+.main-publication h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-publication p {
+    font-size: 16px;
+}
+
+.publication-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 1;
+    width: 20%;
+    height: 5%;
+}
+.card img{
+    width: 100%;
+    height: 30%;
+}
+.card h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Estilo para los botones de Like y Dislike */
+.like {
+    border: none;
+    background-color: #fd7600df; 
+    color: #fff; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-right: 10px;
+}
+.unlike{
+    border: none;
+    background-color: #fd5151; 
+    color: #fff; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-right: 10px;
+}
+.comments{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: space-between;
+    height: 25px;
+}
+.comment{
+    border: none;
+    background-color: #fd7600df; 
+    color: #fff; 
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-left: 5px; 
+
+}
+/* Estilo para los iconos dentro de los botones */
+.like span,
+.unlike span,
+.comment span {
+    margin-right: 4px; /* Espacio entre el ícono y el texto */
+}

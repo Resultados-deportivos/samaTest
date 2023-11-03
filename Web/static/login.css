@@ -1,0 +1,105 @@
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sing-up-container {
+    display: flex;
+    flex-direction: row;
+}
+.inputs-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.rep-password{
+    text-align:left;
+    width:300px;
+}
+.user-correo{
+
+    margin-right: 100px;
+    width:300px;
+    text-align:left;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 10px 0;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: rgb(255, 89, 0);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: black ;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: #007bff;
+}
+.user-correo, .rep-password {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+p a:hover {
+    text-decoration: underline;
+}
